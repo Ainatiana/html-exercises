@@ -10,55 +10,58 @@
   <body>
 
     <form action="https://script.google.com/macros/s/AKfycbx_k22UijbL8nV_HE_eFCqonZ5LtCmyZqLd_wvG3_lWoAdLGWI/exec" method="POST">
+      <small>
+        <b>contributor</b>
+        <input type="hidden" name="contributor" value="Ainatiana">
+      </small>
       <p>
-        <legend>contributor</legend>
-        <input type="text" name="contributor" value="Ainatiana">
+        <label>
+          <small>genre</small>
+        </label>
+          <select name="genre" id="genre-select">
+          <optgroup label="international-genre">
+            <option value="r&b">r&b</option>
+            <option value="rnb">rnb</option>
+            <option value="RNB">RNB</option>
+            <option value="reggae">reggae</option>
+            <option value="slow">slow</option>
+          <optgroup label="malagasy-genre">
+            <option value="salegy">salegy</option>
+            <option value="tsapiky">tsapiky</option>
+            <option value="bassessa">bassessa</option>              <option value="malesa">malesa</option>
+            <option value="kilalaky">kilalaky</option>
+            <option value="kawitry">kawitry</option>
+            <option value="batrelaka">batrelaka</option>
+            <option value="kidodo">kidodo</option>
+        </select>
       </p>
+      <small>
+        artist_name
+      <input type="text" name="artist_name" value="Arione-joy" >
+      </small>
       <p>
-        <legend>genre</legend>
-        <select name="genre" id="genre-select">
-          <option value="r&b">r&b</option>
-          <option value="rnb">rnb</option>
-          <option value="RNB">RNB</option>
-          <option value="salegy">salegy</option>
-          <option value="tsapiky">tsapiky</option>
-          <option value="bassessa">bassessa</option>
-          <option value="malesa">malesa</option>
-          <option value="reggae">reggae</option>
-          <option value="kilalaky">kilalaky</option>
-          <option value="slow">slow</option>
-          <option value="kawitry">kawitry</option>
-          <option value="batrelaka">batrelaka</option>
-          <option value="kidodo">kidodo</option>
-      </select>
-      </p>
-      <p>
-        <legend>artist_name</legend>
-      <input type="text" name="artist_name" value="Arione-joy">
-      </p>
-      <p>
-        <legend>artist_id</legend>
+        <small>
+        artist_id<br>
       <input type="text" name="artist_id" value="arione-joy" >
+      </small>
       </p>
-
       <p>
-        <legend>Website</legend>
+        Website<br>
       <input type="URL" name="website" value="https://web.facebook.com/Arione-Joy-782590048428971/?">
       </p>
       <p>
-        <legend>photo_url</legend>
-        <input type="url" name="photo_url" value="https://web.facebook.com/782590048428971/photos/p.2585409841480307/2585409841480307/?"
+        photo_url
+        <input type="URL" name="photo_url" value="https://web.facebook.com/782590048428971/photos/p.2585409841480307/2585409841480307/?">
       </p>
       <p>
-        <legend>biography</legend>
-      <input type="text" name="biography" value="does not come from a family of artists. His father is not a known and recognized musician. Her mother is not a famous singer either. In his childhood or adolescence, he was not part of a choir. Arione Joy, before 2005, was everyone and had no ambition to become an artist in his youth. The artistic milieu, he falls into it by chance. In 2005, he met a rapper who asked him to appear in his clip.'He asked me if I could rap'. It was his first experience. Four years later, he was a member of a hip hop group: TMC. He continues his race and switches to reggae roots. With MC Lion, he even released a single 'neny'. 2011, he left Antsirabe to settle in the Capital. For Arivony, this is the start of a new and beautiful adventure. In that year, he joined the Mafianar Entertainment team, not as an artist but as a staff member">
+        biography
+        <input type="text" name="biography" value="This astist ssdoes not come from a family of artists. His father is not a known and recognized musician. Her mother is not a famous singer either. In his childhood or adolescence, he was not part of a choir. Arione Joy, before 2005, was everyone and had no ambition to become an artist in his youth. The artistic milieu, he falls into it by chance. In 2005, he met a rapper who asked him to appear in his clip.'He asked me if I could rap'. It was his first experience. Four years later, he was a member of a hip hop group: TMC. He continues his race and switches to reggae roots. With MC Lion, he even released a single 'neny'. 2011, he left Antsirabe to settle in the Capital. For Arivony, this is the start of a new and beautiful adventure. In that year, he joined the Mafianar Entertainment team, not as an artist but as a staff member">
       </p>
-    </form>
+
       <!--
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
-
       <button type="submit">Save</button>
     </form>
   </body>
