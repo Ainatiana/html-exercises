@@ -17,6 +17,14 @@
 
       <section>
         <h2>A menu of a list of links</h2>
+          <nav class="bit">
+            <ul>
+              <li class="bit"><a href="/">Home</a></li>
+              <li class="bit"><a href="/ services">Our serrvices</a></li>
+              <li class="bit"><a href="/about">About us</a></li>
+              <li class="bit"><a href="/contact">Contact us</a></li>
+            </ul>
+          </nav>
         <!--
           1. Create a list of links to form a navigational element. The links are:
             - "Home" links to "/"
@@ -28,6 +36,56 @@
 
       <section>
         <h2>A profile update form</h2>
+        <p>
+          <label for="profile-first-name">Enter here your first name<br>
+            <input type="text" id="first-name" name="name" required
+            minlength="2" maxlength="30" size="25">
+          </label>
+        </p>
+        <p>
+          <label for="profile_family_name">
+            Tape your family name<br>
+            <input type="text" id="family-name" name="family_name"
+            minlength="2" maxlength="30" size="25">
+          </label>
+        </p>
+        <p>
+          <label for="username">
+            Tape your email address<br>
+            <input type="email" id="email" size="26" required>
+          </label>
+        </p>
+        <p>
+          <label for="phone">
+            Phone number<br>
+            <input type="tel" id="phone">
+          </label>
+        </p>
+
+        <section>
+          <div><b>clic on your gender</b><br>
+            <input type="radio" id="male" name="gender" value="male"
+                   >
+            <label for="male">Male</label>
+          </div>
+
+          <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+
+          <div>
+            <input type="radio" id="to-not-disclose" name="gender" value="to-not-disclose" checked>
+            <label for="to-not-disclose">Na</label>
+          </div>
+        </section>
+        <p>
+          <label for="photo">profile photo
+            <br>
+            <input type="image" id="photo" size="22">
+          </label>
+        </p>
+
         <!--
           2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
 
@@ -45,6 +103,15 @@
 
       <section>
         <h2>An excerpt</h2>
+      <h3>The story of your life</h3>
+        <p>
+          <q>The reason you had me was so you could get a maid you wouldn't have to pay,</q> you'll say bitterly, dragging the vacuum cleaner out of the closet.
+        </p>
+        <p> <q><em>That's right!</em></q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it,</q>
+        </p>
+        <p>
+          <q>If you weren't my mmother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.
+        </p>
         <!--
           3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
 
@@ -58,6 +125,16 @@
 
       <section>
         <h2>A table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
         <!--
           4. We need a table, with the following column headers:
 
