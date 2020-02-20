@@ -37,14 +37,14 @@
         <section>
           <h2>A profile update form</h2>
           <p>
-            <label for="profile-first-name">Enter here your first name<br>
+            <label for="profile-first-name">First name<br>
               <input type="text" id="profile-first-name" name="name" required
               minlength="2" maxlength="30" size="25">
             </label>
           </p>
           <p>
             <label for="profile_family_name">
-              Tape your family name<br>
+              Family name<br>
               <input type="text" id="profile_family_name" name="family_name"
               minlength="2" maxlength="30" size="25">
             </label>
@@ -61,31 +61,26 @@
               <input type="tel" id="phone">
             </label>
           </p>
-
           <section>
             <div><b>clic on your gender</b><br>
-              <input type="radio" id="male" name="gender" value="male"
-                    >
-              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">M</label>
             </div>
-
             <div>
               <input type="radio" id="female" name="gender" value="female">
-              <label for="female">Female</label>
+              <label for="female">F</label>
             </div>
-
             <div>
               <input type="radio" id="to-not-disclose" name="gender" value="to-not-disclose" checked>
               <label for="to-not-disclose">Na</label>
             </div>
           </section>
           <p>
-            <label for="photo">profile photo
+            <label for="profile_photo">profile photo(optional) </label>
               <br>
-              <input type="image" id="photo" size="22" alt="0">
-            </label>
+              <input type="file" id="profile_photo" accept="image/jpg, image/png, image/webp">
           </p>
-          <button>Log in</button>
+          <input type="submit" value="log in">
           <!--
             2. Build a form that posts to "/profile/save". In this form we want the user to be able to update their profile, the form needs the following…
 
@@ -103,15 +98,17 @@
 
         <section>
           <h2>An excerpt</h2>
-        <h3>The story of your life</h3>
-          <p>
+          <blockquote>
+        <p>
             <q>The reason you had me was so you could get a maid you wouldn't have to pay,</q> you'll say bitterly, dragging the vacuum cleaner out of the closet.
           </p>
-          <p> <q><em>That's right!</em></q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it,</q>
+          <p>
+            <q><em>That's right!</em></q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it,</q>
           </p>
           <p>
             <q>If you weren't my mmother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.
           </p>
+          </blockquote>
           <!--
             3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
 
@@ -170,13 +167,11 @@
         </section>
         <section>
           <a href="search-result.html">search-pages</a>
-
           <!--
             5. Create a search results page in this folder and link to it from here.
             In this new page you create…
             After a user has entered a search term, we need to display the results of the search back to the user, so that they can click through to the page(s) that match their search.
             This page needs the following structure:
-
               - A header that includes:
                 - the name of the page
                 - a summary of the number of results
@@ -186,7 +181,6 @@
                 - The page title
                 - A link to the page
                 - A summary of where the entered search term matches the page
-
             Here is the entered search term: "critical thinking"
 
             And here are the results, with their excerpts:
@@ -211,7 +205,7 @@
           <img src="markup.png" alt="There are three definitions for the word 'Markup'">
           <dl>
             <dt>
-              <strong>markup</strong><br> /'ma:kAp/
+              <strong>markup</strong><br> /ˈmɑː(ɹ)k.ʌp/
             </dt>
             <dd>
               <p>
@@ -223,7 +217,6 @@
 
                   <li><b>The process or result of correcting text in preparaton for printing</b>.</li>
                   <li><kbd><b>COMPUTING</b></kbd><br><b>A set of tag assigned to elements of a text to the rest of the or dictate how they should displayed</b><br>'markup languages'</li>
-
                 </ol>
             </dd>
           </dl>
